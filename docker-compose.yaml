@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  node-application:
+    build: .
+    container_name: node-application
+    ports:
+      - "9000:3000" #expose port 3000 to host port 9000
+    restart: always #restart the container if it exits unexpectedly
