@@ -1,8 +1,8 @@
-version: "3.9"
+#version: "3.9" # version of the docker-compose
 services:
-  node-application:
-    build: .
-    container_name: node-application
+  node-application: #name of the service
+    build: . # build the Dockerfile in the current directory
+    container_name: node-application # name of the container
     ports:
       - "9000:3000" #expose port 3000 to host port 9000
     restart: always #restart the container if it exits unexpectedly
